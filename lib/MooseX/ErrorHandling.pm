@@ -21,6 +21,18 @@ MooseX::ErrorHandling - Insert Abstract Here
         );
     };
 
+=head1 DESCRIPTION
+
+This module is an attempt to monkey patch the way Moose handles errors.
+Currently Moose throws a number of different exception objects for different
+errors.  If you're trying to replace an existing object system with Moose,
+suddenly your errors could be very different.
+
+=head1 An Important Disclamer
+
+This module is almost certainly a bad idea, and I'm fairly sure I'm going to
+regret putting it on cpan.
+
 =cut
 
 sub whenMooseThrows ($$) {
@@ -41,6 +53,35 @@ sub whenMooseThrows ($$) {
 sub insteadDo (&) {
     return shift;
 }
+
+=head1 TODO
+
+=over 2
+
+=item *
+
+Figure out a sane way to do this.
+
+=back
+
+=head1 AUTHORS
+
+    Chris Reinhardt
+    crein@cpan.org
+
+=head1 COPYRIGHT
+
+This program is free software; you can redistribute
+it and/or modify it under the same terms as Perl itself.
+
+The full text of the license can be found in the
+LICENSE file included with this module.
+
+=head1 SEE ALSO
+
+L<Moose>, perl(1)
+
+=cut
 
 
 1;
