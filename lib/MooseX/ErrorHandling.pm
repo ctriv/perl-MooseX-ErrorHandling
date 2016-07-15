@@ -11,7 +11,7 @@ our @EXPORT = qw(whenMooseThrows insteadDo);
 
 =head1 NAME
 
-MooseX::ErrorHandling - Insert Abstract Here
+MooseX::ErrorHandling - Monkey Patch Moose's Errors
 
 =head1 SYNOPSIS
 
