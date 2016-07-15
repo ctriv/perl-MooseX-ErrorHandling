@@ -15,14 +15,6 @@ MooseX::ErrorHandling - Insert Abstract Here
 
 =head1 SYNOPSIS
 
-=head1 DESCRIPTION
-
-=cut
-
-
-
-=example
-
     whenMooseThrows CanOnlyConsumeRole => insteadDo {
         My::Exception->new(
             error => $_->message
